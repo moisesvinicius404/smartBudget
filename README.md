@@ -31,4 +31,6 @@ Ideal para quem quer **acompanhar seus gastos e ganhos** de forma prática, ráp
 
 ---
 
+![Imagem smartgudget](https://github.com/moisesvinicius404/smartBudget/blob/main/img-smartbudget.png)
+
 
