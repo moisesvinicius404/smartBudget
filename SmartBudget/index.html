@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBudget</title>
+  <script src="app.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-6">
+    <h1 class="text-2xl font-bold mb-4 text-center text-blue-600">SmartBudget 💰</h1>
+
+    <form id="transactionForm" class="flex gap-2 mb-4">
+      <input id="desc" class="border rounded-lg p-2 flex-1" placeholder="Descrição">
+      <input id="value" type="number" class="border rounded-lg p-2 w-24" placeholder="Valor">
+      <select id="type" class="border rounded-lg p-2">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+      </select>
+      <button class="bg-blue-500 text-white px-4 rounded-lg hover:bg-blue-600">Adicionar</button>
+    </form>
+
+    <h2 class="text-lg font-semibold mb-2">Saldo: <span id="balance" class="text-green-600">R$0</span></h2>
+
+    <table class="w-full text-sm text-left border">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="p-2">Descrição</th>
+          <th class="p-2">Valor</th>
+          <th class="p-2">Tipo</th>
+        </tr>
+      </thead>
+      <tbody id="transactionList"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
